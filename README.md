@@ -18,7 +18,13 @@ The website runs inside a Docker container, making deployment more portable and 
 
 ## Project Architecture
 
-Browser → AWS EC2 → Docker Container → Nginx → Static Website
+```mermaid
+flowchart TD
+    A["Browser"] --> B["AWS EC2"]
+    B --> C["Docker Container"]
+    C --> D["Nginx"]
+    D --> E["Static Website"]
+```
 
 ## Implementation Steps
 
@@ -77,3 +83,17 @@ The website was deployed on AWS EC2 and accessed through port 8080.
 GitHub: https://github.com/Abilitycloud
 
 LinkedIn: https://www.linkedin.com/in/adekunle-jamiu-oyetayo
+
+## Project Screenshots
+
+### 1. AWS EC2 Instance
+![AWS EC2 Instance](01-ec2-instance-running.png.png)
+
+### 2. Docker Service Running
+![Docker Service](active%20running%20docker.png)
+
+### 3. Docker Container Running
+![Docker Container](running%20docker%20container.png)
+
+### 4. Live Dockerized Website
+![Live Website](live%20dockerized%20website.png)
